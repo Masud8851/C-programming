@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main ()
+{
+    int i,a[5],sum=0;
+
+    for (i=0;i<5;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for (i=0;i<5;i++)
+    {
+        if(i==4)
+        {
+            printf("%d",a[i]);
+        }
+        else
+        {
+            printf("%d+",a[i]);
+
+        }
+        sum =sum+a[i];
+    }
+
+    printf("=%d",sum);
+    return 0;
+
+}
