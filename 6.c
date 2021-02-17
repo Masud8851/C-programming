@@ -1,42 +1,16 @@
-#include<stdio.h>
+#include <stdio.h>
 int main ()
 {
-    int a;
+    int n=1,i,c=0;
+    //scanf("%d",&n);
 
-    scanf("%d",&a);
-    if(a>=80)
+    for(n=1; n<=5; n++)
     {
-        printf("Grade : A+");
-        printf("CGPA :5.00");
-    }
-    else if (a>=70)
-    {
-        printf("Grade : A");
-        printf("CGPA :4.00");
-    }
-    else if (a>=60)
-    {
-        printf("Grade : A-");
-        printf("CGPA :3.50");
-    }
-    else if (a>=50)
-    {
-       printf("Grade : B");
-       printf("CGPA : 3.00");
-    }
-    else if (a>=40)
-    {
-        printf("Grade : B-");
-        printf("CGPA :2.00");
-    }
-    else if (a>=33)
-    {
-        printf("Grade : C");
-        printf("CGPA :1.00");
-    }
-    else
-    {
-        printf("Fail");
+        for(i=1; i<=10; i++)
+        {
+            //c=c+n;
+            printf("%d x %d = %d\n",n,i,n*i);
+        }
     }
     return 0;
 }
