@@ -1,19 +1,11 @@
 #include <stdio.h>
 int main ()
 {
-    int a,b,c;
-    scanf("%d %d %d",&a,&b,&c);
-    if(a>b && a>c)
+    int i=1, n=5;
+    while (i<=10)
     {
-        printf("a=%d\n",a);
+        printf("%d x %d = %d\n",n,i,n*i);
+        i++;
     }
-    else if(b>a && b>c)
-    {
-        printf("b=%d\n",b);
-    }
-    else
-    {
-        printf("c=%d\n",c);
-    }
-    return main();
+    return 0;
 }
