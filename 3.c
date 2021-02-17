@@ -1,14 +1,15 @@
-#include <stdio.h>
-
+#include<stdio.h>
 int main ()
 {
-    int a,b,x;
-    scanf("%d %d", &a,&b);
-
-    x=a*a+2*a*b+b*b;
-
-    printf("a=%d \tb=%d",a,b);
-    printf("\n%d",x);
-
+    int n= 0;
+    while (n<10)
+    {
+        n=n+1;
+        if(n%2==0)
+        {
+            continue;
+        }
+        printf("%d\n",n);
+    }
     return 0;
 }
