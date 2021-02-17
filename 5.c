@@ -1,27 +1,15 @@
-#include <stdio.h>
+#include<stdio.h>
 int main ()
 {
-    int a,b,c;
-    scanf("%d %d %d",&a,&b,&c);
-    if(a>b)
-    {
-       if(a>c)
-       {
-           printf("a=%d\n",a);
-       }
+    int n,i;
+    //int m=0;
+    printf("Enter the number : ");
+    scanf("%d",&n);
 
-    }
-    else if(b>a)
+    for(i=1; i<=10; i++)
     {
-        if(b>c)
-        {
-            printf("b=%d\n",b);
-        }
-
+        //m=m+n;
+        printf("%d x %d = %d\n",n,i,n*i);
     }
-    else
-    {
-        printf("c=%d\n",c);
-    }
-    return main();
+    return 0;
 }
